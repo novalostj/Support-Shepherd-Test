@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab74871873249ecb213057583db130f, type: 3}
+  m_Name: Run
+  m_EditorClassIdentifier: 
+  transitions:
+  - state: {fileID: 11400000, guid: ddca289f6a63d6b40b23ade38aa3f825, type: 2}
+    eventsToListen: 
+    conditionals:
+      isHoldingMoveInput: 1
+      isHoldingLShift: 2
+  - state: {fileID: 11400000, guid: d1ec8b6b4373ade44ab67b2992573d23, type: 2}
+    eventsToListen: 
+    conditionals:
+      isHoldingMoveInput: 2
+      isHoldingLShift: 0
+  gravityMultiplier: 1
+  speed: 10
